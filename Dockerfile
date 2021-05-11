@@ -12,10 +12,10 @@ RUN curl -sS https://getcomposer.org/installer | php
 RUN mv composer.phar /usr/local/bin/composer
 
 # Install ZIP
-RUN apt-get install -y \
-    libzip-dev \
-    zip \
-    && docker-php-ext-install zip
+# RUN apt-get install -y \
+#   libzip-dev \
+#   zip \
+#   && docker-php-ext-install zip
 
 # Install Subversion
 RUN apt-get install subversion -y
